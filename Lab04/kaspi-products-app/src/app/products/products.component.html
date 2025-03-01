@@ -1,0 +1,95 @@
+<div class="products-container">
+  <h1>Kaspi.kz Products</h1>
+
+  <div class="products-grid">
+    <div class="product-card" *ngFor="let product of products">
+      <div class="product-image" (click)="openGallery(product)">
+        <img [src]="product.imageUrl" [alt]="product.name" />
+        <div
+          class="gallery-icon"
+          *ngIf="product.images && product.images.length > 1"
+        >
+          <i class="fas fa-images"></i>
+        </div>
+      </div>
+
+      <div class="product-info">
+        <h2 class="product-name">{{ product.name }}</h2>
+
+        <div class="product-rating">
+          <span *ngFor="let star of getStarsArray(product.rating)">
+            <i class="fas fa-star" *ngIf="star === 1"></i>
+            <i class="fas fa-star-half-alt" *ngIf="star === 0.5"></i>
+            <i class="far fa-star" *ngIf="star === 0"></i>
+          </span>
+          <span class="rating-value">{{ product.rating }}</span>
+        </div>
+
+        <p class="product-description">{{ product.description }}</p>
+
+        <div class="product-price">{{ product.price }}</div>
+
+        <div class="product-actions">
+          <a [href]="product.kaspiLink" target="_blank" class="kaspi-link">
+            <button class="view-button">View on Kaspi</button>
+          </a>
+
+          <div class="share-buttons">
+            <button
+              class="share-button whatsapp"
+              (click)="shareOnWhatsApp(product)"
+            >
+              <i class="fab fa-whatsapp"></i>
+            </button>
+            <button
+              class="share-button telegram"
+              (click)="shareOnTelegram(product)"
+            >
+              <i class="fab fa-telegram-plane"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="gallery-modal" *ngIf="selectedProduct">
+  <div class="gallery-content">
+    <button class="close-button" (click)="closeGallery()">×</button>
+
+    <div class="gallery-image-container">
+      <img
+        [src]="selectedProduct.images?.[currentImageIndex]"
+        [alt]="selectedProduct.name"
+        class="gallery-image"
+      />
+
+      <div
+        class="gallery-controls"
+        *ngIf="selectedProduct.images && selectedProduct.images.length > 1"
+      >
+        <button class="gallery-nav prev" (click)="prevImage()">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="gallery-nav next" (click)="nextImage()">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+      </div>
+
+      <div
+        class="gallery-indicators"
+        *ngIf="selectedProduct.images && selectedProduct.images.length > 1"
+      >
+        <span
+          *ngFor="let image of selectedProduct.images; let i = index"
+          [class.active]="i === currentImageIndex"
+          class="indicator"
+        ></span>
+      </div>
+    </div>
+
+    <h3>{{ selectedProduct.name }}</h3>
+    <p class="gallery-price">{{ selectedProduct.price }}</p>
+  </div>
+</div>
