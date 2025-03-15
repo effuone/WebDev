@@ -60,13 +60,13 @@ export class ProductService {
         'Pure Android experience with a 50MP camera, Tensor G3 chip and 120Hz display',
       rating: 4.7,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/hb0/h95/84939662909470.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/hd1/hc9/84326216630302.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/google-pixel-8-pro-12-gb-128-gb-chernyi-114166752/',
       price: '499 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hb0/h95/84939662909470.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hb0/h95/84939662909470.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/hd1/hc9/84326216630302.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/hd1/hc9/84326216630302.jpg?format=preview-large',
       ],
       categoryId: 1,
       likes: 0,
@@ -78,13 +78,13 @@ export class ProductService {
         'High-end smartphone with Snapdragon 8 Gen 3, Leica cameras and AMOLED display',
       rating: 4.6,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/hf3/h95/85144190992414.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h86/h08/85506637168670.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/xiaomi-14-ultra-16-gb-512-gb-chernyi-116694055/',
       price: '599 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hf3/h95/85144190992414.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hf3/h95/85144190992414.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h86/h08/85506637168670.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/h86/h08/85506637168670.jpg?format=preview-large',
       ],
       categoryId: 1,
       likes: 0,
@@ -96,13 +96,13 @@ export class ProductService {
         'Flagship with Snapdragon 8 Gen 3, Hasselblad cameras and super-fast charging',
       rating: 4.5,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/h27/h79/85093275574302.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p62/p82/24035969.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/oneplus-12-16-gb-512-gb-chernyi-116234002/',
       price: '539 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/h27/h79/85093275574302.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h27/h79/85093275574302.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p62/p82/24035969.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/p62/p82/24035969.jpg?format=preview-large',
       ],
       categoryId: 1,
       likes: 0,
@@ -154,13 +154,13 @@ export class ProductService {
         'Premium laptop with Intel Core i7, 16GB RAM, 512GB SSD and NVIDIA RTX 3050 Ti',
       rating: 4.7,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/h98/h2a/84431600844830.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h2d/hb8/67728241262622.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/dell-xps-15-9530-15-6-32-gb-ssd-1000-gb-windows-11-home-111249781/',
       price: '1 199 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/h98/h2a/84431600844830.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h98/h2a/84431600844830.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h2d/hb8/67728241262622.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/h2d/hb8/67728241262622.jpg?format=preview-large',
       ],
       categoryId: 2,
       likes: 0,
@@ -172,31 +172,31 @@ export class ProductService {
         'Convertible laptop with OLED display, Intel Core i7, 16GB RAM and touchscreen',
       rating: 4.6,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/hc6/h4e/68038072090654.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h82/hbb/85832389918750.png?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/hp-spectre-x360-14-ef0172na-14-16-gb-ssd-1000-gb-windows-11-home-chernyi-108971393/',
       price: '899 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hc6/h4e/68038072090654.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hc6/h4e/68038072090654.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h82/hbb/85832389918750.png?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/h82/hbb/85832389918750.png?format=preview-large',
       ],
       categoryId: 2,
       likes: 0,
     },
     {
       id: 16,
-      name: 'Lenovo ThinkPad X1 Carbon',
+      name: 'HP Spectre x360',
       description:
         'Business laptop with Intel Core i7, 16GB RAM, 1TB SSD and excellent keyboard',
       rating: 4.8,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/hd8/h21/63804182224926.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h56/h7b/85832828157982.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/lenovo-thinkpad-x1-carbon-gen-10-21cb0067rt-14-32-gb-ssd-1000-gb-windows-11-pro-chernyi-108137062/',
       price: '1 099 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/hd8/h21/63804182224926.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/hd8/h21/63804182224926.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h56/h7b/85832828157982.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/h56/h7b/85832828157982.jpg?format=preview-large',
       ],
       categoryId: 2,
       likes: 0,
@@ -267,13 +267,13 @@ export class ProductService {
         'Action camera with 5.3K video, HyperSmooth 6.0 stabilization and waterproof design',
       rating: 4.7,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/h4d/h46/83559848599582.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p14/pe8/28750744.jpg?format=preview-large',
       kaspiLink:
         'https://kaspi.kz/shop/p/gopro-hero12-black-chernyi-112864254/',
       price: '189 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/h4d/h46/83559848599582.png?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h4d/h46/83559848599582.png?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/p14/pe8/28750744.jpg?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/p14/pe8/28750744.jpg?format=preview-large',
       ],
       categoryId: 3,
       likes: 0,
@@ -285,12 +285,12 @@ export class ProductService {
         'Advanced VR headset with high-resolution display and motion controllers',
       rating: 4.6,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/h4a/hee/84433867415582.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h00/h89/84023738925086.png?format=preview-large',
       kaspiLink: 'https://kaspi.kz/shop/p/meta-quest-3-128-gb-belyi-114087027/',
       price: '249 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/h4a/hee/84433867415582.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h4a/hee/84433867415582.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h00/h89/84023738925086.png?format=preview-large',
+        'https://resources.cdn-kaspi.kz/img/m/p/h00/h89/84023738925086.png?format=preview-large',
       ],
       categoryId: 3,
       likes: 0,
@@ -342,13 +342,13 @@ export class ProductService {
         'Energy-efficient dishwasher with multiple programs and quiet operation',
       rating: 4.7,
       imageUrl:
-        'https://resources.cdn-kaspi.kz/img/m/p/h93/h69/64069422465054.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h95/h0a/63784196636702.jpg?format=gallery-medium',
       kaspiLink:
         'https://kaspi.kz/shop/p/bosch-sms6eci03e-serebristyi-100344115/',
       price: '349 990 ₸',
       images: [
-        'https://resources.cdn-kaspi.kz/img/m/p/h93/h69/64069422465054.jpg?format=gallery-medium',
-        'https://resources.cdn-kaspi.kz/img/m/p/h93/h69/64069422465054.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h95/h0a/63784196636702.jpg?format=gallery-medium',
+        'https://resources.cdn-kaspi.kz/img/m/p/h95/h0a/63784196636702.jpg?format=gallery-medium',
       ],
       categoryId: 4,
       likes: 0,
