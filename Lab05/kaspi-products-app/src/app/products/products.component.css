@@ -1,3 +1,71 @@
+/* Additional styles for category navigation */
+.category-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+.category-button {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.category-button:hover {
+  background-color: #e9ecef;
+}
+
+.category-button.active {
+  background-color: #ff6836;
+  color: white;
+  border-color: #ff6836;
+}
+
+/* Style for likes counter */
+.product-likes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  font-size: 14px;
+  color: #555;
+}
+
+.like-button {
+  background-color: #4267B2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.like-button:hover {
+  background-color: #365899;
+}
+
+/* Remove button style */
+.share-button.remove {
+  background-color: #dc3545;
+  color: white;
+}
+
+.share-button.remove:hover {
+  background-color: #bd2130;
+}
+
+/* Existing styles from provided CSS file */
 .products-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -304,5 +372,14 @@
   
   .gallery-image-container {
     height: 300px;
+  }
+
+  .category-nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category-button {
+    width: 80%;
   }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProductService } from '../services/products.service';
-import { Product } from '../models/products';
+import { Product, Category } from '../models/products';
 
 @Component({
   selector: 'app-products',
@@ -12,13 +12,37 @@ import { Product } from '../models/products';
 })
 export class ProductsComponent implements OnInit {
   products: Product[] = [];
+  categories: Category[] = [];
   selectedProduct: Product | null = null;
   currentImageIndex = 0;
+  selectedCategory: Category | null = null;
 
   constructor(private productService: ProductService) {}
 
   ngOnInit(): void {
-    this.loadProducts();
+    this.loadCategories();
+  }
+
+  loadCategories(): void {
+    this.productService.getCategories().subscribe((categories) => {
+      this.categories = categories;
+      if (categories.length > 0) {
+        this.selectCategory(categories[0]);
+      }
+    });
+  }
+
+  selectCategory(category: Category): void {
+    this.selectedCategory = category;
+    this.loadProductsByCategory(category.id);
+  }
+
+  loadProductsByCategory(categoryId: number): void {
+    this.productService
+      .getProductsByCategory(categoryId)
+      .subscribe((products) => {
+        this.products = products;
+      });
   }
 
   loadProducts(): void {
@@ -39,6 +63,19 @@ export class ProductsComponent implements OnInit {
       product.kaspiLink
     )}&text=${encodeURIComponent(product.name)}`;
     window.open(telegramUrl, '_blank');
+  }
+
+  likeProduct(product: Product): void {
+    this.productService.likeProduct(product.id).subscribe((updatedProduct) => {
+      if (updatedProduct) {
+        product.likes = updatedProduct.likes;
+      }
+    });
+  }
+
+  removeProduct(product: Product): void {
+    this.productService.removeProduct(product.id);
+    this.products = this.products.filter((p) => p.id !== product.id);
   }
 
   openGallery(product: Product): void {

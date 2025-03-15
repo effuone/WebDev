@@ -1,6 +1,17 @@
 <div class="products-container">
   <h1>Kaspi.kz Products</h1>
 
+  <div class="category-nav">
+    <button
+      *ngFor="let category of categories"
+      [class.active]="selectedCategory?.id === category.id"
+      (click)="selectCategory(category)"
+      class="category-button"
+    >
+      {{ category.name }}
+    </button>
+  </div>
+
   <div class="products-grid">
     <div class="product-card" *ngFor="let product of products">
       <div class="product-image" (click)="openGallery(product)">
@@ -29,6 +40,14 @@
 
         <div class="product-price">{{ product.price }}</div>
 
+        <!-- Like Counter -->
+        <div class="product-likes">
+          <span>Likes: {{ product.likes }}</span>
+          <button class="like-button" (click)="likeProduct(product)">
+            <i class="fas fa-thumbs-up"></i> Like
+          </button>
+        </div>
+
         <div class="product-actions">
           <a [href]="product.kaspiLink" target="_blank" class="kaspi-link">
             <button class="view-button">View on Kaspi</button>
@@ -46,6 +65,13 @@
               (click)="shareOnTelegram(product)"
             >
               <i class="fab fa-telegram-plane"></i>
+            </button>
+            <button
+              class="share-button remove"
+              (click)="removeProduct(product)"
+              title="Remove"
+            >
+              <i class="fas fa-trash"></i>
             </button>
           </div>
         </div>

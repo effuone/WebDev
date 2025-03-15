@@ -7,4 +7,11 @@ export interface Product {
   kaspiLink: string;
   price: string;
   images?: string[];
+  categoryId: number;
+  likes: number;
+}
+
+export interface Category {
+  id: number;
+  name: string;
 }
