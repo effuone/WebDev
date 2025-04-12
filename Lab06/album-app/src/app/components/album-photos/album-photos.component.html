@@ -1,0 +1,41 @@
+<div class="container">
+  <div class="d-flex justify-content-between align-items-center mb-4">
+    <h2>Album Photos</h2>
+    <button class="btn btn-secondary" (click)="goBack()">Return</button>
+  </div>
+
+  <div *ngIf="loading" class="text-center p-5">
+    <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+  </div>
+
+  <div *ngIf="error" class="alert alert-danger" role="alert">
+    {{ error }}
+  </div>
+
+  <div *ngIf="!loading && !error">
+    <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4">
+      <div
+        class="col"
+        *ngFor="let photo of photos; let i = index"
+        [style.--index]="i"
+      >
+        <div class="card h-100">
+          <img
+            [src]="photo.thumbnailUrl"
+            class="card-img-top"
+            [alt]="photo.title"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Photo ID: {{ photo.id }}</h5>
+            <p class="card-text">{{ photo.title }}</p>
+            <a [href]="photo.url" target="_blank" class="btn btn-primary"
+              >View Full Size</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
